@@ -1,0 +1,143 @@
+
+
+
+1) JSON (FOR IN LOOP)
+
+Var Employee={
+Name: "Aravindh"
+Age:23
+Education: "engineering"
+Address: "Chennai"
+Status: "single"
+};
+Console.log(student);
+
+2) WRITE THE RESUME IN JSON
+
+      Var resume={
+      "name": "ganesh kumar"
+      "mail id": "abc0123@gmail.com"
+      "address": "Villupuram"
+      "Phone":"9883746378"
+      "Objective": "To secure a challenging position in a reputable organization to expand my learnings, knowledge, and skills"
+      "Qualification": {
+                       "Higher Degree":"M.Sc Computer Science"
+		"Under Degree":"B.Sc Computer Science",
+		"HSC":"12th"
+		"SSLC":"10th"
+		},
+      "Programming Skills":["c","c++","HTML","SQL"]
+      "Additional Skills": ["English Typewriting","Tamil Typewriting","COA"]
+      "extracurricular activities":"Also known as extra-academic activities, extracurricular activities include sports, student government, community service, employment, arts, hobbies, and educational clubs. 
+      "Personal Details": {
+		"date of birth":"10/1/1999"
+		"Martial status":"single",
+		"Nationality":"Indian",
+		"Father's Name":"Siva",
+		"Age":"23",
+		"Sports":"No"
+		},
+      "Declaration": "I Ganesh kumar hereby declare that all the information given above are true to the best of my knowledge"
+      };
+
+3) WHAT IS WINDOW , DOCUMENT AND SCREEN
+
+   DOCUMENT OBJECT :     Each html document that gets loaded into a window becomes a document object. the document contains the contents of the page. using document object, javascript can modify, add and delete the html elements, attributes css styles in the page.
+   WINDOW OBJECT:          It is the top most object and outermost element of the object hierarchy.
+   SCREEN OBJECT:   Screen is a small information object about physical screen dimensions . It can be used to display screen width, height, colorDepth, pixelDepth etc. It is not mandatory to write window prefix with screen object. It can be written without window prefix.
+
+DOCUMENT OBJECT:
+ 	The document object represent a web page that is loaded in the browser. by accessing the document object, we can access the element in the html page. with the help of document objects, we can add dynamic content to our web page. the document object can be accessed with a window.document or just document.
+POINTS:
+* It represents any html document or web page that is loaded in the browser.
+* It is loaded inside the window.
+* It is the object of window property.
+* All the tags, elements with attributes in html are part of the document.
+* We can access the document from a window using the window. document
+* The document is part of bom (browser object model) and dom (document object model)
+* Properties of document objects such as title, body, cookies, etc can also be accessed by a window like this window. document.title
+SYNTAX:
+      document.property_name;
+EXAMPLE:
+      document.title :  will return the title of the document
+
+PROPERTIES AND METHODS OF DOCUMENT OBJECT:
+      METHODS	                   DESCRIPTION
+      alert()			displays an alert box with a message and an ok button
+	blur()			removes focus from the current window
+	clearinterval()		clears a timer set with setinterval()
+	cleartimeout()		clears a timer set with settimeout()
+	close()			closes the current window
+	confirm()		displays a dialog box with a message and an ok and a cancel button
+	createpopup()		creates a pop-up window
+	focus()			sets focus to the current window
+	moveby()		moves a window relative to its current position
+	moveto()		moves a window to the specified position
+	open()			opens a new browser window
+	print()			prints the content of the current window
+	prompt()		displays a dialog box that prompts the visitor for input
+	resizeby()		resizes the window by the specified pixels
+	resizeto()		resizes the window to the specified width and height
+	scroll()			deprecated. this method has been replaced by the scrollto() method.
+	scrollby()		scrolls the document by the specified number of pixels
+	scrollto()		scrolls the document to the specified coordinates
+	setinterval()		calls a function or evaluates an expression at specified intervals (in milliseconds)
+	settimeout()		calls a function or evaluates an expression after a specified number of milliseconds
+	stop()			stops the window from loading
+
+
+WINDOW OBJECT:
+      The window object is the topmost object of the dom hierarchy. it represents a browser window or frame that displays the contents of the webpage. whenever a window appears on the screen to display the contents of the document, the window object is created. 
+POINTS:
+* it represents a browser window or frame that displays the contents of the webpage. 
+* it is the very first object that is loaded in the browser.
+* it is the object of the browser.
+* global objects, functions, and variables of javascript are members of the window object.
+* we can access the window from the window only. i.e. window.window
+* the window is part of bom, not dom.
+* properties of the window object cannot be accessed by the document object.
+SYNTAX:
+      window.propertyname;
+EXAMPLE:
+      window.innerheight : will return the height of the content area of the browser
+
+PROPERTIES OF WINDOW OBJECT:
+      PROPERTY     	   	DESCRIPTION
+closed		returns a boolean value indicating whether a window has been closed or not
+defaultstatus	sets or returns the default text in the statusbar of a window
+document	returns the document object for the window
+frameelement	returns the, <iframe> element in which the current window is inserted
+frames		returns all,<iframe> elements in the current window
+history		returns the history object for the window
+innerheight	returns the inner height of a window's content area
+innerwidth	returns the inner width of a window's content area
+length		returns the number of, <iframe> elements in the current window
+location	returns the location object for the window (see location object)
+name		sets or returns the name of a window
+navigator	returns the navigator object for the window (see navigator object)
+opener		returns a reference to the window that created the window
+outerheight	returns the outer height of a window, including toolbars/scrollbars
+outerwidth	returns the outer width of a window, including toolbars/scrollbars
+pagexoffset	returns the pixels the current document has been scrolled (horizontally) from the upper left corner of the window
+pageyoffset	returns the pixels the current document has been scrolled (vertically) from the   upper left corner of the window
+parent		returns the parent window of the current window
+screen		returns the screen object for the window (see screen object)
+screenleft	returns the horizontal coordinate of the window relative to the screen
+screentop	returns the vertical coordinate of the window relative to the screen
+screenx	returns the horizontal coordinate of the window relative to the screen
+screeny	returns the vertical coordinate of the window relative to the screen
+self		returns the current window
+status		sets or returns the text in the statusbar of a window
+top		returns the topmost browser window
+
+SCREEN OBJECT:
+      Screen is a small information object about physical screen dimensions . It can be used to display screen width, height, colorDepth, pixelDepth etc. It is not mandatory to write window prefix with screen object. It can be written without window prefix.
+
+
+Property          Description  
+availHeight       specifies the height of screen, excluding the windows taskbar
+availWidth	 specifies the width of the screen, excluding the Windows taskbar
+colorDepth       specifies the depth of color palette, in bits, to display images
+height		  specifies the total height of the screen 
+pixelDepth	  specifies the color Resolution, in bits per pixel, of the screen
+width                specifies the total width of the screen
